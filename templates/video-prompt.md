@@ -1,0 +1,28 @@
+# <ชื่อซีรีส์> — ตอนที่ <เลขตอน>: <ชื่อตอน>
+
+- **ตัวละคร:** <ลิงก์ไฟล์ใน characters/>
+- **ความยาว:** 8 วินาที
+- **สัดส่วนภาพ:** 9:16 (แนวตั้ง)
+- **ภาษาบทพูด:** <ไทย / อังกฤษ / ฮีบรู>
+
+## บทพูด
+
+> <ประโยคที่ตัวละครพูด>
+
+คำแปล: <คำแปลภาษาไทย>
+
+## Prompt (English)
+
+```
+Subject: <who, appearance, clothing — copy from character file>
+Setting: <where, time of day, lighting>
+Action: <what happens, step by step>
+Camera: <shot type, angle, movement>
+Dialogue: "<line>" spoken in <language>, <tone>
+Style: <realistic / cinematic / UGC phone video>, natural colors
+Audio: <ambient sound, no background music>
+```
+
+## หมายเหตุ
+
+- <สิ่งที่ต้องแก้ไขหลังลองสร้าง>
