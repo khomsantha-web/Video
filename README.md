@@ -6,7 +6,7 @@
 
 | โฟลเดอร์ | ใช้เก็บ |
 |---|---|
-| `prompts/` | Prompt จริง แยกโฟลเดอร์ตามซีรีส์ เช่น `prompts/<ชื่อซีรีส์>/ep01.md` |
+| `prompts/` | Prompt จริง แยกโฟลเดอร์ตามซีรีส์ เช่น `prompts/season-01/ep01.md` |
 | `templates/` | แม่แบบ Prompt สำหรับใช้ซ้ำ |
 | `characters/` | รายละเอียดตัวละคร ให้หน้าตาและการแต่งกายเหมือนกันทุกคลิป |
 
@@ -18,5 +18,5 @@
 
 ## เริ่มต้นใช้งาน
 
-1. คัดลอก `templates/video-prompt.md` ไปไว้ใน `prompts/<ชื่อซีรีส์>/ep01.md`
+1. คัดลอก `templates/video-prompt.md` ไปไว้ใน `prompts/season-01/ep01.md`
 2. กรอกแต่ละหัวข้อ แล้วคัดลอกส่วน **Prompt** ไปวางใน Gemini
