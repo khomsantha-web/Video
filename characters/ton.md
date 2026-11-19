@@ -13,6 +13,8 @@ Ton, a 26-year-old Thai man, stocky build, black buzz-cut hair, medium-brown ski
 
 ## Prompt ภาพตัวละคร (สร้างใน Gemini ก่อน แล้วใช้เป็นภาพอ้างอิงใน Flow)
 
+ใช้ฉากหลังสีเทาเรียบ ๆ เพื่อให้ Flow ดึงไปแค่ตัวคน ฉากป่าจะมาจาก Prompt ของแต่ละตอน
+
 ```
-Full-body portrait of Ton, a 26-year-old Thai man, stocky build, black buzz-cut hair, medium-brown skin, round black-framed glasses, wearing a navy-blue fleece jacket, gray cargo pants, black hiking boots, carrying a large orange tent bag on his shoulder. Standing in a misty tropical forest, neutral expression, facing the camera. Cinematic realistic photo, muted desaturated greens, soft overcast light, 9:16 vertical.
+Full-body portrait of Ton, a 26-year-old Thai man, stocky build, black buzz-cut hair, medium-brown skin, round black-framed glasses, wearing a navy-blue fleece jacket, gray cargo pants, black hiking boots, carrying a large orange tent bag on his shoulder. Standing alone against a plain light-gray studio background, nothing else in the frame, neutral expression, facing the camera, arms relaxed at the sides. Realistic photo, even soft studio lighting, sharp focus on face and clothing, 9:16 vertical. No text, no props other than those described.
 ```

@@ -13,6 +13,8 @@ Nat, a 24-year-old Thai man, slim build, short messy black hair, light-tan skin,
 
 ## Prompt ภาพตัวละคร (สร้างใน Gemini ก่อน แล้วใช้เป็นภาพอ้างอิงใน Flow)
 
+ใช้ฉากหลังสีเทาเรียบ ๆ เพื่อให้ Flow ดึงไปแค่ตัวคน ฉากป่าจะมาจาก Prompt ของแต่ละตอน
+
 ```
-Full-body portrait of Nat, a 24-year-old Thai man, slim build, short messy black hair, light-tan skin, thin face, wearing a red-and-black flannel shirt open over a black T-shirt, olive-green cargo pants, brown hiking boots, a gray backpack, and a headlamp on his forehead. Standing in a misty tropical forest, neutral expression, facing the camera. Cinematic realistic photo, muted desaturated greens, soft overcast light, 9:16 vertical.
+Full-body portrait of Nat, a 24-year-old Thai man, slim build, short messy black hair, light-tan skin, thin face, wearing a red-and-black flannel shirt open over a black T-shirt, olive-green cargo pants, brown hiking boots, a gray backpack, and a headlamp on his forehead. Standing alone against a plain light-gray studio background, nothing else in the frame, neutral expression, facing the camera, arms relaxed at the sides. Realistic photo, even soft studio lighting, sharp focus on face and clothing, 9:16 vertical. No text, no props other than those described.
 ```
