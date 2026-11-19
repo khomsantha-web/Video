@@ -33,7 +33,22 @@ Combine the three people from these images into one photo. They stand side by si
 ### ตอน 1: คืนแรก
 
 ```
-NIGHT, VERY DARK. Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Medium-wide shot. Nat, Prang and Ton sit close together around a crackling campfire in a small clearing in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist, at night, fully dark. They are laughing, faces lit warm orange by the fire. An orange two-person tent stands behind them. Behind the tent, the forest is almost pitch black; only the nearest tree trunks catch the firelight. Ton sits nearest the camera, his face clearly visible. Very dark night scene, low-key lighting. The campfire is the only light source; outside the circle of firelight everything is black. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
+Create a photorealistic cinematic horror movie still, vertical 9:16, set at night in a remote mountainous rainforest in northern Thailand.
+
+THREE FRIENDS are sitting close together around a small campfire in front of a clearly visible orange camping tent. They face the fire and each other, casually laughing quietly, unaware of anything strange.
+
+CHARACTER CONSISTENCY — exact outfits:
+Nat: 24-year-old slim Thai man, short messy black hair, red-and-black plaid shirt worn open over a black T-shirt, olive cargo pants, gray backpack, headlamp on his forehead SWITCHED OFF.
+Prang: 23-year-old petite Thai woman, black hair in a low ponytail, mustard-yellow rain jacket, black leggings, holding a small silver flashlight SWITCHED OFF.
+Ton: 26-year-old stocky Thai man, very short buzz-cut hair, round black glasses, navy blue fleece jacket WITHOUT a hood, gray cargo pants, orange tent bag beside him.
+
+COMPOSITION: medium-wide shot, all three friends and the orange tent visible, Ton closest to the camera. The campfire is in the foreground, illuminating their faces and clothing with realistic warm orange firelight. The forest beyond the firelight is completely black, with dense tree silhouettes barely visible at the edges. No moonlight, no ambient illumination, no artificial lighting, no lights in the forest.
+
+EXTREME LIGHTING CONTRAST: bright fire only within the immediate campsite, rapidly falling off into pitch-black darkness. The forest must NOT be evenly illuminated.
+
+Atmosphere: realistic smoke, subtle drifting embers, damp mountain air, oppressive darkness, unsettling isolation, professional cinematic horror cinematography, natural film grain, realistic shadows.
+
+No visible supernatural creature. No text, subtitles, logos, watermarks.
 ```
 
 ### ตอน 2: ทางหาย
@@ -83,15 +98,13 @@ NIGHT, VERY DARK. Use the attached reference images of Nat (man in a red-and-bla
 ### ตอน 1: คืนแรก
 
 ```
-Night horror scene, very dark. The campfire is the only light; the forest behind them is black. Continue from the start frame with the same three people, faces, clothes and lighting.
-0-2s: the three laugh quietly by the fire.
-2-4s: Ton (right, glasses) suddenly stops laughing and slowly turns his head to look over his shoulder into the black forest behind them. Nat and Prang are still smiling.
-4-6s: deep in the black trees behind them, a small white flashlight blinks twice, then goes dark.
-6-8s: Ton whispers in Thai: "เฮ้ย... มีคนอื่นมาแคมป์แถวนี้ด้วยเหรอ"
-Camera: slow push-in toward Ton. One continuous shot, no cuts.
-Mood: tense, quiet, cinematic horror.
-Audio: fire crackling, crickets, no music. Speak Thai only.
-No subtitles, no captions, no on-screen text.
+8-second cinematic horror, one continuous shot, NO CUTS.
+0–2s: Three friends quietly laugh beside the campfire. Firelight only; forest pitch-black.
+2–4s: Ton abruptly stops laughing, turns his head toward the dark forest. The others fall silent.
+4–6s: A tiny white flashlight deep between the trees blinks twice, then goes dark. Ton stares into the darkness.
+6–8s: Slowly push the camera toward Ton as he whispers in Thai: "เฮ้ย... มีคนอื่นมาแคมป์แถวนี้ด้วยเหรอ"
+Fire is the ONLY light source; beyond its reach, absolute darkness. No creature visible. No subtitles, text, music, cuts, bright background, or extra dialogue. Natural fire crackling only.
+Ton wears his round black glasses at all times, including in the close-up. His face stays exactly the same as in the start frame.
 ```
 
 ### ตอน 2: ทางหาย
