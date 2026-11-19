@@ -33,7 +33,7 @@ Combine the three people from these images into one photo. They stand side by si
 ### ตอน 1: คืนแรก
 
 ```
-Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Medium-wide shot. Nat, Prang and Ton sit close together around a crackling campfire in a small clearing in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist, at night, fully dark. They are laughing, faces lit warm orange by the fire. An orange two-person tent stands behind them. Behind the tent, the forest is almost pitch black; only the nearest tree trunks catch the firelight. Ton sits nearest the camera, his face clearly visible. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
+Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Medium-wide shot. Nat, Prang and Ton sit close together around a crackling campfire in a small clearing in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist, at night, fully dark. They are laughing, faces lit warm orange by the fire. An orange two-person tent stands behind them. Behind the tent, the forest is almost pitch black; only the nearest tree trunks catch the firelight. Ton sits nearest the camera, his face clearly visible. Very dark night scene, low-key lighting. The campfire is the only light source; outside the circle of firelight everything is black. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
 ```
 
 ### ตอน 2: ทางหาย
@@ -57,25 +57,25 @@ Use the attached reference images of Nat (man in a red-and-black flannel shirt w
 ### ตอน 5: ป่าเงียบ
 
 ```
-Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Dusk, cold blue light, heavy mist in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist. Close-up of Prang's frozen, frightened face, sharp focus, in the foreground. Nat and Ton are soft and blurred just beside her. Far behind her, between two trees in the mist, a very tall, unnaturally thin, dark silhouette stands completely still, out of focus and barely visible. It has no visible face or details. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
+Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Dusk, cold blue light, heavy mist in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist. Close-up of Prang's frozen, frightened face, sharp focus, in the foreground. Nat and Ton are soft and blurred just beside her. Far behind her, between two trees in the mist, a very tall, unnaturally thin, dark silhouette stands completely still, out of focus and barely visible. It has no visible face or details. Dim, dark blue dusk, low-key lighting, almost no light left; the deep background fades into dark mist. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
 ```
 
 ### ตอน 6: เสียงเรียก
 
 ```
-Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Night in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist, almost pitch black. Medium shot from the front: Nat and Prang stand side by side staring past the camera into the darkness, lit only by Nat's headlamp and Prang's small flashlight. Prang grips Nat's arm. Just behind them, half hidden in shadow at the edge of the light, Ton stands pale and terrified, his round glasses catching a little light. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
+Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Night in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist, almost pitch black. Medium shot from the front: Nat and Prang stand side by side staring past the camera into the darkness, lit only by Nat's headlamp and Prang's small flashlight. Prang grips Nat's arm. Just behind them, half hidden in shadow at the edge of the light, Ton stands pale and terrified, his round glasses catching a little light. Very dark night scene, low-key lighting. Nat's headlamp and Prang's flashlight are the only light sources; outside their narrow beams everything is black. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
 ```
 
 ### ตอน 7: รูปจากคืนแรก
 
 ```
-Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Night in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist. Nat, Prang and Ton huddle behind a fallen mossy log, their faces lit only by the cold blue glow of the phone in Prang's hands. Over-the-shoulder view of the phone screen, which shows a photo of the three of them laughing around a campfire; in the dark behind them in the photo, a very tall, thin, blurry dark figure is faintly visible. Prang's face is pale with fear. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
+Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Night in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist. Nat, Prang and Ton huddle behind a fallen mossy log, their faces lit only by the cold blue glow of the phone in Prang's hands. Over-the-shoulder view of the phone screen, which shows a photo of the three of them laughing around a campfire; in the dark behind them in the photo, a very tall, thin, blurry dark figure is faintly visible. Prang's face is pale with fear. Very dark night scene, low-key lighting. The phone screen is the only light source; outside its blue glow everything is black. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
 ```
 
 ### ตอน 8: ถุงนอนใบที่สี่
 
 ```
-Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Night in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist. Wide shot from behind Nat, Prang and Ton as they stop at the edge of a clearing, breathing hard. In front of them a campfire burns beside an orange two-person tent, the same campsite from the first night. Ton still carries the packed orange tent bag on his shoulder. Beside the fire lie four sleeping bags in a row; the fourth one is unzipped and open. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
+Use the attached reference images of Nat (man in a red-and-black flannel shirt with a headlamp), Prang (woman in a mustard-yellow rain jacket) and Ton (man with very short buzz-cut hair, round black-framed glasses, a navy-blue fleece jacket that is not a hoodie, and an orange tent bag). Keep their faces, hair, clothes and items exactly the same as in the references. Night in a dense tropical evergreen forest in the mountains of northern Thailand, towering trees with hanging vines, thick fern undergrowth, low drifting mist. Wide shot from behind Nat, Prang and Ton as they stop at the edge of a clearing, breathing hard. In front of them a campfire burns beside an orange two-person tent, the same campsite from the first night. Ton still carries the packed orange tent bag on his shoulder. Beside the fire lie four sleeping bags in a row; the fourth one is unzipped and open. Very dark night scene, low-key lighting. The campfire is the only light source; outside the circle of firelight everything is black. Cinematic horror film still, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No text, no captions, no watermark.
 ```
 
 ## ขั้นที่ 3: วิดีโอ (วางใน Flow พร้อมใส่ภาพเฟรมแรก)
@@ -89,6 +89,7 @@ Setting: A small clearing in a dense tropical evergreen forest in the mountains 
 Action: All three are visible from the first second, Ton sitting closest to the camera. They sit around the campfire laughing. Ton suddenly stops laughing and stares past the others into the dark tree line. Deep among the trees, a single faint white flashlight beam blinks twice, then goes dark
 Camera: Medium-wide shot of the three at the fire, slow push-in to Ton's face, then rack focus to the dark tree line behind him. One single continuous shot, no cuts, no scene changes
 Dialogue: Ton says in Thai: "เฮ้ย... มีคนอื่นมาแคมป์แถวนี้ด้วยเหรอ", half-whisper, uneasy. Speak only in Thai, never English
+Lighting: Very dark night scene, low-key lighting. The campfire is the only light source; outside the circle of firelight everything is black.
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Crackling fire, crickets, distant night birds, no background music
 ```
@@ -102,6 +103,7 @@ Setting: The same clearing in a dense tropical evergreen forest in the mountains
 Action: Nat walks to the edge of the clearing where the trail entered yesterday. There is no trail anymore, only a solid wall of ferns and trees. He pushes the ferns aside: nothing but more forest. Prang and Ton stop behind him
 Camera: Over-the-shoulder shot from behind Nat facing the wall of ferns, then a slow orbit around to his confused face. One single continuous shot, no cuts, no scene changes
 Dialogue: Nat says in Thai: "ทางที่เราเดินเข้ามา... มันหายไปไหน", quiet, confused, trying to stay calm. Speak only in Thai, never English
+Lighting: Natural low-key lighting, deep shadows
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Thin bird calls, wind in the leaves, rustling ferns, no background music
 ```
@@ -115,6 +117,7 @@ Setting: Deep inside a dense tropical evergreen forest in the mountains of north
 Action: Prang ties a strip of red ribbon around a tree trunk. Behind her, Nat holds up his phone; the compass on the screen spins slowly and will not stop. Ton looks around nervously
 Camera: Close-up of Prang's hands tying the red ribbon, then pull back to a medium shot of all three. One single continuous shot, no cuts, no scene changes
 Dialogue: Prang says in Thai: "ผูกไว้ทุกต้นนะ เราจะได้รู้ว่าเดินผ่านมาแล้ว", determined but nervous. Speak only in Thai, never English
+Lighting: Natural low-key lighting, deep shadows
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Buzzing insects, footsteps on dry leaves, no background music
 ```
@@ -128,6 +131,7 @@ Setting: a dense tropical evergreen forest in the mountains of northern Thailand
 Action: The three stop walking. Every tree around them has dozens of identical red ribbons tied on it, far more than they could have tied. The ribbons sway slowly although there is no wind. Ton turns in a circle, staring
 Camera: Slow 360-degree orbit around the three friends, revealing more and more ribbons on every tree. One single continuous shot, no cuts, no scene changes
 Dialogue: Ton says in Thai: "เราผูกไว้ทีละเส้นเองนะ... ใครผูกพวกนี้", shaky, scared. Speak only in Thai, never English
+Lighting: Natural low-key lighting, deep shadows
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Forest sounds slowly fading out, faint fluttering of ribbons, no background music
 ```
@@ -141,6 +145,7 @@ Setting: a dense tropical evergreen forest in the mountains of northern Thailand
 Action: Every insect and bird sound cuts off at once. Prang freezes. Far behind her, between two trees in the mist, a very tall, thin, dark silhouette stands completely still, out of focus and barely visible. It never moves and is never shown clearly
 Camera: Static close-up of Prang's face with shallow focus; the silhouette stays blurred in the deep background. One single continuous shot, no cuts, no scene changes
 Dialogue: Prang says in Thai: "ทำไม... เงียบไปหมดเลย", trembling whisper. Speak only in Thai, never English
+Lighting: Dim, dark blue dusk, low-key lighting, almost no light left; the deep background fades into dark mist.
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Forest ambience for the first second, then abrupt total silence, only soft breathing, no background music
 ```
@@ -154,6 +159,7 @@ Setting: a dense tropical evergreen forest in the mountains of northern Thailand
 Action: Nat and Prang face the darkness. From deep in the forest, a voice that sounds like Ton calls out. Nat takes a step toward it; Prang grabs his arm. The camera turns to reveal Ton standing right behind them, pale and terrified
 Camera: Medium shot of Nat and Prang from the front, then a slow pan to reveal Ton behind them. One single continuous shot, no cuts, no scene changes
 Dialogue: An echoing off-screen voice that sounds like Ton but slightly wrong calls in Thai: "นัท... มาทางนี้". Then Ton, standing behind them, whispers in Thai: "นั่น... ไม่ใช่เสียงเรา". Speak only in Thai, never English
+Lighting: Very dark night scene, low-key lighting. Nat's headlamp and Prang's flashlight are the only light sources; outside their narrow beams everything is black.
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Silent forest, the distant echoing voice, heavy breathing, no background music
 ```
@@ -167,6 +173,7 @@ Setting: a dense tropical evergreen forest in the mountains of northern Thailand
 Action: Prang scrolls to a photo of the three of them at the campfire on the first night and zooms in. On the screen, right behind them at the edge of the firelight, stands a very tall, thin, dark figure. Her face goes pale
 Camera: Over-the-shoulder close-up on the phone screen as she zooms in, then tilt up to her face lit blue by the screen. One single continuous shot, no cuts, no scene changes
 Dialogue: Prang says in Thai: "มันอยู่กับเรา... ตั้งแต่คืนแรก", shaking, barely audible. Speak only in Thai, never English
+Lighting: Very dark night scene, low-key lighting. The phone screen is the only light source; outside its blue glow everything is black.
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Low droning tone, faint heartbeat, no background music
 ```
@@ -180,6 +187,7 @@ Setting: a dense tropical evergreen forest in the mountains of northern Thailand
 Action: The three run through the trees toward the glow of a fire and burst into the clearing. They stop. Beside the fire lie four sleeping bags in a row; the fourth is unzipped, as if someone just got out. Nat whispers. The fire suddenly goes out and everything goes black
 Camera: Smooth tracking shot from behind as they run, opening into a wide reveal of the campsite, then a slow push-in on the fourth sleeping bag before cutting to black. One single continuous shot, no cuts, no scene changes
 Dialogue: Nat says in Thai: "ถุงนอนใบที่สี่... ของใคร", breathless whisper. Speak only in Thai, never English
+Lighting: Very dark night scene, low-key lighting. The campfire is the only light source; outside the circle of firelight everything is black.
 Style: Cinematic horror film, realistic, muted desaturated greens, deep shadows, subtle film grain, shallow depth of field, 9:16 vertical. No subtitles, no captions, no on-screen text of any kind
 Audio: Running footsteps and heavy breathing, crackling fire, then a sudden whoosh as the fire dies and total silence, no background music
 ```
