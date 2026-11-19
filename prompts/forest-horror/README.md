@@ -28,7 +28,7 @@
 
 ## คัดลอก Prompt ทั้งหมดในไฟล์เดียว
 
-ดู [copy-all.md](copy-all.md)
+ดู [copy-all.md](copy-all.md) และภาพเฟรมแรกของแต่ละตอนที่ [first-frames.md](first-frames.md)
 
 ## วิธีทำใน Gemini + Flow (ทำตามลำดับ)
 
