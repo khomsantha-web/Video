@@ -18,7 +18,7 @@
     chai:  { seed: 53, jacket: hex('#4a3626'), sash: hex('#7a5a3a'), oldHat: hex('#3b3026'), gun: true, lantern: true, coat: true, dot: hex('#e08a2c') },
   };
 
-  const LOOK2 = new URLSearchParams(location.search).get('look') === '2';
+  const LOOK2 = ['2', '3'].includes(new URLSearchParams(location.search).get('look'));
   const mix = (c, d, k) => [Math.round(lerp(c[0], d[0], k)), Math.round(lerp(c[1], d[1], k)), Math.round(lerp(c[2], d[2], k))];
 
   // st: {x, y, s (world units per local unit), facing:'back'|'front', walk (phase, radians) or null, step (0..1 amplitude),

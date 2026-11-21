@@ -6,8 +6,8 @@
   const C = TL.cues;
   const [W, H] = TL.size;
   const SUBS = new URLSearchParams(location.search).get('subs') !== '0';
-  const LOOK2 = new URLSearchParams(location.search).get('look') === '2';
-  const DK = LOOK2 ? .3 : 1;
+  const LOOK2 = ['2', '3'].includes(new URLSearchParams(location.search).get('look')), LOOK3 = new URLSearchParams(location.search).get('look') === '3';
+  const DK = LOOK3 ? 0 : LOOK2 ? .3 : 1;
   const cv = document.getElementById('c'); cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d');
 
@@ -64,6 +64,7 @@
   }
   const mixc = (a, b, k) => a.map((v, i) => Math.round(lerp(v, b[i], k)));
   function fogBand(t, x0, x1, yc, th, col, a, sp, seed) {
+    if (LOOK3) return;   // clarity look: no drifting fog
     ctx.fillStyle = rgba(col, a / 2);
     for (let k = 0; k < 2; k++) {
       ctx.beginPath();
@@ -131,8 +132,8 @@
       if (x > 400 && x < 600) continue;
       items.push(mk(R, [[x, 1268], [x + (R() - .5) * 20, 960], [x + (R() - .5) * 30, 640]], { w: 10 + R() * 22, prof: 'trunk', col: R() < .5 ? P.dark : P.mid, a: .75, nb: 5 }));
     }
-    items.push(wash(R, blob(R, 500, 1150, 95, 140, 22, .22), hex('#0c100d'), 1, 10));   // the way in
-    items.push(wash(R, blob(R, 502, 1170, 62, 100, 20, .2), hex('#060807'), .9, 8));
+    items.push(wash(R, blob(R, 500, 1150, 95, 140, 22, .22), (LOOK3 ? hex('#22302a') : hex('#0c100d')), 1, 10));   // the way in
+    items.push(wash(R, blob(R, 502, 1170, 62, 100, 20, .2), (LOOK3 ? hex('#18211c') : hex('#060807')), .9, 8));
     for (let i = 0; i < 9; i++) { const a = Math.PI * (1.05 + i / 8 * .9); crown(items, 500 + Math.cos(a) * 120, 1110 + Math.sin(a) * 150, 34 + R() * 26, P.forest, .9); }
     for (let i = 0; i < 7; i++) { const x = 420 + R() * 160; items.push(mk(R, [[x, 990 + R() * 30], [x + (R() - .5) * 20, 1040 + R() * 50]], { w: 3, prof: 'tip', col: P.dark, a: .8, nb: 1 })); }
     B.wall = { items, bb: [-220, -120, 1440, 1420] };
@@ -340,13 +341,13 @@
     let dim = 0;
     if (t >= C.fogAB && t < C.fogBD) dim = .12 + .5 * ss((t - 40) / 4.5);
     if (t >= C.fogBD) dim = .38;
-    if (LOOK2) dim *= .6;
+    if (LOOK2) dim *= LOOK3 ? .12 : .6;
     if (dim > 0) {
       const g = ctx.createRadialGradient(W / 2, H * .55, 200, W / 2, H * .55, 1300);
       g.addColorStop(0, rgba([12, 18, 14], dim * .7)); g.addColorStop(1, rgba([8, 12, 10], Math.min(.95, dim * 1.35)));
       ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
     }
-    if (r) for (const L of r.lights) glow(L, r.s, r.cx, r.cy, L.r > 30 ? 2.2 : 3);
+    if (r) for (const L of r.lights) glow({ ...L, k: L.k * (LOOK3 && L.c[2] > 200 ? .45 : 1) }, r.s, r.cx, r.cy, L.r > 30 ? 2.2 : 3);
     cover(t, C.fogAB, 0, P.fog);
     cover(t, C.fogBD, 0, P.fogDeep);
     if (SUBS) subtitle(t);
