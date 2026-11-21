@@ -6,7 +6,7 @@
   const C = TL.cues;
   const [W, H] = TL.size;
   const SUBS = new URLSearchParams(location.search).get('subs') !== '0';
-  const LOOK2 = ['2', '3'].includes(new URLSearchParams(location.search).get('look')), LOOK3 = new URLSearchParams(location.search).get('look') === '3';
+  const LOOK2 = ['2', '3'].includes((new URLSearchParams(location.search).get('look') ?? '3')), LOOK3 = (new URLSearchParams(location.search).get('look') ?? '3') === '3';
   const cv = document.getElementById('c'); cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d');
 
@@ -248,7 +248,7 @@
     }
   }
   D.cam = track([[44.4, 500, 2380, 1.0], [48, 500, 2360, 1.0], [53, 500, 960, 1.04], [55, 500, 940, 1.05]]);
-  const sD = (y) => 3.1 * lerp(.84, 1, clamp((y - 2800) / 110));
+  const sD = (y) => (LOOK3 ? 3.5 : 3.1) * lerp(.84, 1, clamp((y - 2800) / 110));
   const D0 = [['chai', 520, 2790], ['kiet', 640, 2815], ['niran', 380, 2850], ['mali', 590, 2885], ['ton', 445, 2905]];
   function castD(t) {
     const out = [];
@@ -315,13 +315,18 @@
   const RW = mulberry(2027);
   const FOG = hex('#5d675e');
   const tint = (c, k) => mixc(c, FOG, k);
-  const FK = [0, .3, .55, .78];
+  const FK = LOOK3 ? [0, .1, .2, .3] : [0, .3, .55, .78];
   const trunkSpr = [0, 1].map((v) => FK.map((k) => {
     const c = document.createElement('canvas'); c.width = 90; c.height = 1300; const g = c.getContext('2d');
     const base = v ? P.forest : P.dark;
     for (const it of [mk(RW, [[45, 1300], [45 + (RW() - .5) * 8, 650], [45 + (RW() - .5) * 10, 0]], { w: 70, prof: 'even', col: tint(base, k), a: 1, nb: 9, rough: .12 }),
       mk(RW, [[24, 1300], [26, 0]], { w: 12, prof: 'even', col: tint(P.moss, k), a: .35, nb: 3 }),
       mk(RW, [[66, 1300], [64, 300]], { w: 8, prof: 'even', col: tint(hex('#0b0f0c'), k), a: .4, nb: 2 })]) E.drawItem(g, it, 1, 1);
+    if (LOOK3) {   // solid trunks with a dark edge line, so they read as trees rather than haze
+      const RE = mulberry(99 + v);
+      for (const x of [11, 79]) E.drawItem(g, mk(RE, [[x, 1300], [x + (RE() - .5) * 4, 650], [x + (RE() - .5) * 5, 0]], { w: 5, prof: 'even', col: hex('#070908'), a: .85, nb: 0, rough: .1 }), 1, 1);
+      g.fillStyle = 'rgba(20,28,22,.35)'; g.fillRect(10, 0, 70, 1300);
+    }
     return c;
   }));
   const bushSpr = [0, 1, 2].map((v) => FK.map((k) => {
@@ -367,14 +372,14 @@
   function cam3(t) {
     const [cxo, f, ho, back] = camK(t), g = G(t);
     const bob = Math.sin(g / .7 * Math.PI) * .012 * clamp(speedAt(t) / .9);
-    return { x: cxo, z: g - back, y: 1.55 + bob, yaw: yawAt(t), f, yh: 820 + ho };
+    return { x: cxo, z: g - back * (LOOK3 ? .9 : 1), y: 1.55 + bob, yaw: yawAt(t), f: f * (LOOK3 ? 1.1 : 1), yh: 820 + ho };
   }
   const proj = (cm, X, Y, Z) => {
     const dx = X - cm.x, dz = Z - cm.z, c = Math.cos(cm.yaw), s = Math.sin(cm.yaw);
     const xc = dx * c - dz * s, zc = dx * s + dz * c;
     return { x: W / 2 + xc * cm.f / zc, y: cm.yh + (cm.y - Y) * cm.f / zc, z: zc };
   };
-  const fogK = (z) => 1 - Math.exp(-z / 15);
+  const fogK = (z) => 1 - Math.exp(-z / (LOOK3 ? 45 : 15));
   const fkIdx = (k) => k < .2 ? 0 : k < .45 ? 1 : k < .68 ? 2 : 3;
 
   // footprints: five walkers (static decals behind them) + the sixth set that follows
@@ -491,7 +496,7 @@
         ctx.drawImage(bushSpr[it.o.v][fkIdx(k)], p.x - r * 2.2, p.y - r * 2.1, r * 4.4, r * 2.4);
       } else if (it.k === 'f') {
         const st = it.o, s = .0168 * cm.f / p.z;
-        const L = drawFigure(ctx, st.id, { ...st, x: p.x, y: p.y, s: s * (LOOK2 ? 1.2 : 1), dark: LOOK3 ? .02 + k * .12 : LOOK2 ? .04 + k * .3 : .25 + k * .7, darkCol: hex('#3a433d') });
+        const L = drawFigure(ctx, st.id, { ...st, x: p.x, y: p.y, s: s * (LOOK2 ? 1.2 : 1), dark: LOOK3 ? .02 + k * .12 : LOOK2 ? .04 + k * .3 : .25 + k * .7, darkCol: LOOK3 ? hex('#1f2822') : hex('#3a433d') });
         lights.push(...L);
         if (st.beam && st.headOut) lights.push({ beam: true, from: st.headOut, to: st.beam === 'right' ? proj(cm, st.X + 5, 1.1, st.Z + .6) : proj(cm, st.X + .1, .2, st.Z + 9), w: 70 });
       } else if (it.k === 's') {   // the shape between the trees: too tall, no face, does not move with the light
@@ -576,7 +581,7 @@
     const { from, to } = L, ang = Math.atan2(to.y - from.y, to.x - from.x), len = Math.min(1400, Math.hypot(to.x - from.x, to.y - from.y) * 1.4);
     for (let i = 0; i < 3; i++) {
       const spread = .12 + i * .07;
-      ctx.fillStyle = `rgba(235,235,215,${.07 - i * .015})`;
+      ctx.fillStyle = `rgba(235,235,215,${(.07 - i * .015) * (LOOK3 ? .25 : 1)})`;
       ctx.beginPath(); ctx.moveTo(from.x, from.y);
       ctx.lineTo(from.x + Math.cos(ang - spread) * len, from.y + Math.sin(ang - spread) * len);
       ctx.lineTo(from.x + Math.cos(ang + spread) * len, from.y + Math.sin(ang + spread) * len); ctx.closePath(); ctx.fill();
@@ -594,7 +599,7 @@
     const gr = ctx.createRadialGradient(W / 2, H * .55, 200, W / 2, H * .55, 1300);
     gr.addColorStop(0, rgba([12, 18, 14], dim * .7)); gr.addColorStop(1, rgba([8, 12, 10], Math.min(.95, dim * 1.4)));
     ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H);
-    for (const L of r.lights) { if (L.beam) beam(L); else glow({ ...L, k: L.k * (LOOK3 && L.c[2] > 200 ? .45 : 1) }, r.s, r.cx, r.cy, L.r > 30 ? 2.2 : 3); }
+    for (const L of r.lights) { if (L.beam) beam(L); else glow({ ...L, k: L.k * (LOOK3 && L.c[2] > 200 ? .25 : 1) }, r.s, r.cx, r.cy, (L.r > 30 ? 2.2 : 3) * (LOOK3 && L.c[2] > 200 ? .55 : 1)); }
     cover(t, C.fogIn, 0, P.fogDeep);
     ghost(t);
     if (SUBS) subtitle(t);

@@ -6,7 +6,7 @@
   const C = TL.cues;
   const [W, H] = TL.size;
   const SUBS = new URLSearchParams(location.search).get('subs') !== '0';
-  const LOOK2 = ['2', '3'].includes(new URLSearchParams(location.search).get('look')), LOOK3 = new URLSearchParams(location.search).get('look') === '3';
+  const LOOK2 = ['2', '3'].includes((new URLSearchParams(location.search).get('look') ?? '3')), LOOK3 = (new URLSearchParams(location.search).get('look') ?? '3') === '3';
   const DK = LOOK3 ? 0 : LOOK2 ? .3 : 1;
   const cv = document.getElementById('c'); cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d');
@@ -249,7 +249,7 @@
     }
   }
   D.cam = track([[44.4, 500, 2380, 1.0], [48, 500, 2360, 1.0], [53, 500, 960, 1.04], [55, 500, 940, 1.05]]);
-  const sD = (y) => 3.1 * lerp(.84, 1, clamp((y - 2800) / 110));
+  const sD = (y) => (LOOK3 ? 3.5 : 3.1) * lerp(.84, 1, clamp((y - 2800) / 110));
   const D0 = [['chai', 520, 2790], ['kiet', 640, 2815], ['niran', 380, 2850], ['mali', 590, 2885], ['ton', 445, 2905]];
   function castD(t) {
     const out = [];
