@@ -490,6 +490,17 @@
   EV.push({ t: C.lastPrint, type: 'drip', g: 1 });
   EV.sort((a, b) => a.t - b.t);
   window.EV = EV;
+  // every readable text on screen at t (for core/render/readcheck.mjs)
+  window.TEXTS = (t) => {
+    const out = [];
+    if (SUBS) for (const s of TL.subs) if (t >= s.t0 && t <= s.t1) {
+      const n = s.text.split('/').length, yc = s.pos === 'high' ? 1210 : 1490;
+      out.push({ id: 'sub' + s.t0, text: s.text.replace('/', ' '), x0: 90, x1: 990, y0: yc - n * 40, y1: yc + n * 40 });
+    }
+    if (t >= .3 && t < 5.2) out.push({ id: 'night3', text: 'คืนที่ ๓', x0: 340, x1: 740, y0: 300, y1: 430 });
+    if (t >= C.endNote && t <= TL.dur) out.push({ id: 'night4', text: 'คืนที่สี่', x0: 300, x1: 780, y0: 780, y1: 940 });
+    return out;
+  };
   window.DUR = TL.dur;
   window.READY = true;
 })().catch((e) => { console.error('init failed', e); window.INIT_ERROR = String(e && e.stack || e); });
