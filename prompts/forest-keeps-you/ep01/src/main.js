@@ -6,6 +6,8 @@
   const C = TL.cues;
   const [W, H] = TL.size;
   const SUBS = new URLSearchParams(location.search).get('subs') !== '0';
+  const LOOK2 = new URLSearchParams(location.search).get('look') === '2';
+  const DK = LOOK2 ? .3 : 1;
   const cv = document.getElementById('c'); cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d');
 
@@ -175,22 +177,22 @@
     const fadeIn = (k) => ss((t - 6.4 - k * .25) / .8);
     // Niran: map up in the group shot
     { const w = walkSt(t, B0.niran, [488, 1192], 38.8, 43.8);
-      out.push(['niran', { ...w, s: sB(w.y), facing: 'back', map: t < 38.6 ? ss((t - 7.4) / .6) * (1 - ss((t - 12.5) / .6)) : 0, armL: 0, fade: fadeIn(0) * (1 - ss((1205 - w.y) / 18)), dark: clamp((1265 - w.y) / 75) }]); }
+      out.push(['niran', { ...w, s: sB(w.y), facing: 'back', map: t < 38.6 ? ss((t - 7.4) / .6) * (1 - ss((t - 12.5) / .6)) : 0, armL: 0, fade: fadeIn(0) * (1 - ss((1205 - w.y) / 18)), dark: clamp((1265 - w.y) / 75) * DK }]); }
     // Kiet: laughs, touches his cap, raises his phone, walks in first
     { const w = walkSt(t, B0.kiet, ENTR, C.kietWalk, 38.7);
       const laugh = t > C.kietLaugh && t < C.kietLaugh + 1.5 ? 1 - ss((t - C.kietLaugh - 1.1) / .4) : 0;
       const cap = ss((t - 32.6) / .3) * (1 - ss((t - 33.4) / .3));
       const ph = ss((t - C.kietPhone) / .35) * (1 - ss((t - 37.6) / .4));
-      out.push(['kiet', { ...w, s: sB(w.y), facing: 'back', shake: laugh, arm: Math.max(cap * .62, ph * .78), phone: ph, t, fade: fadeIn(1) * (1 - ss((1200 - w.y) / 16)), dark: clamp((1265 - w.y) / 75) }]); }
+      out.push(['kiet', { ...w, s: sB(w.y), facing: 'back', shake: laugh, arm: Math.max(cap * .62, ph * .78), phone: ph, t, fade: fadeIn(1) * (1 - ss((1200 - w.y) / 16)), dark: clamp((1265 - w.y) / 75) * DK }]); }
     { const w = walkSt(t, B0.mali, [514, 1194], 39.3, 44.1);
-      out.push(['mali', { ...w, s: sB(w.y), facing: 'back', radio: true, armL: t < 38 ? ss((t - 8.4) / .5) * .8 * (1 - ss((t - 11.6) / .5)) : 0, fade: fadeIn(2) * (1 - ss((1208 - w.y) / 18)), dark: clamp((1265 - w.y) / 75) }]); }
+      out.push(['mali', { ...w, s: sB(w.y), facing: 'back', radio: true, armL: t < 38 ? ss((t - 8.4) / .5) * .8 * (1 - ss((t - 11.6) / .5)) : 0, fade: fadeIn(2) * (1 - ss((1208 - w.y) / 18)), dark: clamp((1265 - w.y) / 75) * DK }]); }
     { const w = walkSt(t, B0.ton, [498, 1196], 39.7, 44.45);
-      out.push(['ton', { ...w, s: sB(w.y), facing: 'back', look: t < 38 ? .5 * ss((t - 9) / 1) : 0, fade: fadeIn(3) * (1 - ss((1210 - w.y) / 18)), dark: clamp((1265 - w.y) / 75) }]); }
+      out.push(['ton', { ...w, s: sB(w.y), facing: 'back', look: t < 38 ? .5 * ss((t - 9) / 1) : 0, fade: fadeIn(3) * (1 - ss((1210 - w.y) / 18)), dark: clamp((1265 - w.y) / 75) * DK }]); }
     // Chai: faces the group, raises his hand, points the way; then turns and leads the way in
     { const w = walkSt(t, B0.chai, [503, 1182], 38.4, 41.2);
       const hand = ss((t - C.chaiHand) / .5) * (1 - ss((t - 18.2) / .5));
       const point = ss((t - C.chaiPoint) / .5) * (1 - ss((t - 25.6) / .6)) * .55;
-      out.push(['chai', { ...w, s: sB(w.y), facing: t < 38.25 ? 'front' : 'back', arm: Math.max(hand, point), lampOn: 1, fade: ss((t - 6.3) / .8) * (1 - ss((1195 - w.y) / 12)), dark: clamp((1262 - w.y) / 70) * .85 }]); }
+      out.push(['chai', { ...w, s: sB(w.y), facing: t < 38.25 ? 'front' : 'back', arm: Math.max(hand, point), lampOn: 1, fade: ss((t - 6.3) / .8) * (1 - ss((1195 - w.y) / 12)), dark: clamp((1262 - w.y) / 70) * .85 * DK }]); }
     return out.sort((a, b) => a[1].y - b[1].y);
   }
   function drawB(t) {
@@ -214,7 +216,7 @@
     for (let k = 0; k < 3; k++) fogBand(t, 200 - k * 80, 800 + k * 80, 1195 + k * 25, 90 + k * 30, P.fog, (.07 + .08 * ss((t - 13.5) / 2) * (1 - ss((t - 31) / 2))), .15 + k * .05, 3 + k);   // fog flowing out
     const lights = [];
     for (const [id, st] of castB(t)) lights.push(...drawFigure(ctx, id, st));
-    fogBand(t, -200, 1200, 1150, 110, P.fog, .16, .05, 7);
+    fogBand(t, -200, 1200, 1150, 110, P.fog, LOOK2 ? .05 : .16, .05, 7);
     return { lights, s, cx, cy };
   }
 
@@ -255,7 +257,7 @@
       const walking = u < 1;
       const look = ss((t - C.lookUp - i * .22) / .7);
       const st = { x: x + Math.sin(i * 2) * 3, y: yy, s: sD(y), facing: 'back', walk: walking ? (t - 44) * 6.2 + i : null, step: walking ? 1 - u : 0,
-        look, lean: 0, radio: true, lampOn: 1, dark: .35, darkCol: hex('#101512') };
+        look, lean: 0, radio: true, lampOn: 1, dark: .35 * DK, darkCol: hex('#101512') };
       if (id === 'chai') st.arm = ss((t - C.handUp) / .45) * (1 - ss((t - 49) / .8));
       out.push([id, st]);
     });
@@ -277,7 +279,7 @@
     fogBand(t, -200, 1200, 2700, 160, P.fog, .14, .05, 14);
     const lights = [];
     for (const [id, st] of castD(t)) lights.push(...drawFigure(ctx, id, st));
-    fogBand(t, -200, 1200, 2960, 120, P.fog, .12, .06, 16);
+    fogBand(t, -200, 1200, 2960, 120, P.fog, LOOK2 ? .04 : .12, .06, 16);
     return { lights, s, cx, cy };
   }
 
@@ -338,6 +340,7 @@
     let dim = 0;
     if (t >= C.fogAB && t < C.fogBD) dim = .12 + .5 * ss((t - 40) / 4.5);
     if (t >= C.fogBD) dim = .38;
+    if (LOOK2) dim *= .6;
     if (dim > 0) {
       const g = ctx.createRadialGradient(W / 2, H * .55, 200, W / 2, H * .55, 1300);
       g.addColorStop(0, rgba([12, 18, 14], dim * .7)); g.addColorStop(1, rgba([8, 12, 10], Math.min(.95, dim * 1.35)));

@@ -6,6 +6,7 @@
   const C = TL.cues;
   const [W, H] = TL.size;
   const SUBS = new URLSearchParams(location.search).get('subs') !== '0';
+  const LOOK2 = new URLSearchParams(location.search).get('look') === '2';
   const cv = document.getElementById('c'); cv.width = W; cv.height = H;
   const ctx = cv.getContext('2d');
 
@@ -287,7 +288,7 @@
   function castS1(t) {
     return D0.map(([id, x, y], i) => {
       const look = 1 - ss((t - 4.5 - i * .18) / .9);
-      return [id, { x: x + Math.sin(i * 2) * 3, y, s: sD(y), facing: 'back', walk: null, look, radio: true, lampOn: 1, dark: .35, darkCol: hex('#101512'), torch: id === 'niran' ? 1 : 0 }];
+      return [id, { x: x + Math.sin(i * 2) * 3, y, s: sD(y), facing: 'back', walk: null, look, radio: true, lampOn: 1, dark: LOOK2 ? .06 : .35, darkCol: hex('#101512'), torch: id === 'niran' ? 1 : 0 }];
     }).sort((a, b) => a[1].y - b[1].y);
   }
   function drawS1(t) {
@@ -489,7 +490,7 @@
         ctx.drawImage(bushSpr[it.o.v][fkIdx(k)], p.x - r * 2.2, p.y - r * 2.1, r * 4.4, r * 2.4);
       } else if (it.k === 'f') {
         const st = it.o, s = .0168 * cm.f / p.z;
-        const L = drawFigure(ctx, st.id, { ...st, x: p.x, y: p.y, s, dark: .25 + k * .7, darkCol: hex('#3a433d') });
+        const L = drawFigure(ctx, st.id, { ...st, x: p.x, y: p.y, s: s * (LOOK2 ? 1.2 : 1), dark: LOOK2 ? .04 + k * .3 : .25 + k * .7, darkCol: hex('#3a433d') });
         lights.push(...L);
         if (st.beam && st.headOut) lights.push({ beam: true, from: st.headOut, to: st.beam === 'right' ? proj(cm, st.X + 5, 1.1, st.Z + .6) : proj(cm, st.X + .1, .2, st.Z + 9), w: 70 });
       } else if (it.k === 's') {   // the shape between the trees: too tall, no face, does not move with the light
@@ -502,7 +503,7 @@
         }
       }
     }
-    for (let i = 0; i < 3; i++) fogBand(t, -100, W + 100, cm.yh - 40 + i * 70, 120 + i * 40, P.fog, .1, .05 + i * .02, 40 + i);
+    for (let i = 0; i < 3; i++) fogBand(t, -100, W + 100, cm.yh - 40 + i * 70, 120 + i * 40, P.fog, LOOK2 ? .04 : .1, .05 + i * .02, 40 + i);
     return { lights, s: 1, cx: W / 2, cy: H / 2 };
   }
   // ---------- subtitles ----------
@@ -588,7 +589,7 @@
     const r = t < C.fogIn ? drawS1(t) : drawPath(t);
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.save(); ctx.globalCompositeOperation = 'multiply'; ctx.globalAlpha = .5; ctx.drawImage(paper, 0, 0); ctx.restore();
-    const dim = t < C.fogIn ? .38 : .34;
+    const dim = (t < C.fogIn ? .38 : .34) * (LOOK2 ? .6 : 1);
     const gr = ctx.createRadialGradient(W / 2, H * .55, 200, W / 2, H * .55, 1300);
     gr.addColorStop(0, rgba([12, 18, 14], dim * .7)); gr.addColorStop(1, rgba([8, 12, 10], Math.min(.95, dim * 1.4)));
     ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H);

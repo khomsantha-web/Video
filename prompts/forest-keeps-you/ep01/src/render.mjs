@@ -28,7 +28,8 @@ const server = http.createServer((req, res) => {
   fs.createReadStream(f).pipe(res);
 });
 await new Promise((r) => server.listen(0, '127.0.0.1', r));
-const URL0 = `http://127.0.0.1:${server.address().port}/index.html?subs=${subs}`;
+const extraQ = opt('q', '');
+const URL0 = `http://127.0.0.1:${server.address().port}/index.html?subs=${subs}${extraQ ? '&' + extraQ : ''}`;
 
 async function openPage(browser) {
   const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
