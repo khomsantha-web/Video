@@ -1,0 +1,131 @@
+{
+ "episode": "EP01",
+ "fade_out": 0.8,
+ "shots": [
+  {
+   "id": "s01a",
+   "file": "ep01_s01a.png",
+   "dur": 3,
+   "motion": "zoom_in",
+   "note": "มุมสูงเหนือป่า เครื่องบินเล็กบินจากซ้ายไปขวา"
+  },
+  {
+   "id": "s01b",
+   "file": "ep01_s01b.png",
+   "dur": 3,
+   "motion": "pan_right",
+   "note": "เครื่องบินเข้าหมอกหนา ค่อยๆ หายไป"
+  },
+  {
+   "id": "s02a",
+   "file": "ep01_s02a.png",
+   "dur": 3.5,
+   "motion": "zoom_out",
+   "note": "กลุ่มค้นหา 4 คนยืนที่ปากป่า พรานชัยอยู่หน้า"
+  },
+  {
+   "id": "s02b",
+   "file": "ep01_s02b.png",
+   "dur": 3.5,
+   "motion": "pan_left",
+   "note": "นิรันดร์กางแผนที่ มาลีตรวจวิทยุ (ภาพใกล้)"
+  },
+  {
+   "id": "s03a",
+   "file": "ep01_s03a.png",
+   "dur": 4,
+   "motion": "zoom_in",
+   "note": "พรานชัยหันหน้ายกมือห้าม ตะเกียงส้ม"
+  },
+  {
+   "id": "s03b",
+   "file": "ep01_s03b.png",
+   "dur": 3,
+   "motion": "zoom_in",
+   "note": "ภาพใกล้ใบหน้า/ตะเกียงพรานชัย ป่าลึกด้านหลัง"
+  },
+  {
+   "id": "s04a",
+   "file": "ep01_s04a.png",
+   "dur": 5.5,
+   "motion": "zoom_in",
+   "note": "ศาลเก่าริมทาง ผ้าแดงซีด พรานชี้ทาง"
+  },
+  {
+   "id": "s04b",
+   "file": "ep01_s04b.png",
+   "dur": 5.5,
+   "motion": "zoom_in",
+   "note": "กลุ่มยืนฟัง สีหน้ากังวล"
+  },
+  {
+   "id": "s05a",
+   "file": "ep01_s05a.png",
+   "dur": 3.5,
+   "motion": "zoom_in",
+   "note": "เกียรติหัวเราะ ปรับหมวก"
+  },
+  {
+   "id": "s05b",
+   "file": "ep01_s05b.png",
+   "dur": 3.5,
+   "motion": "pan_right",
+   "note": "เกียรติเดินนำเข้าหมอก พรานมองตาม"
+  },
+  {
+   "id": "s06a",
+   "file": "ep01_s06a.png",
+   "dur": 7,
+   "motion": "zoom_out",
+   "note": "กลุ่มเดินเข้าป่า มองจากด้านหลัง"
+  },
+  {
+   "id": "s07a",
+   "file": "ep01_s07a.png",
+   "dur": 5,
+   "motion": "tilt_up",
+   "note": "ทุกคนหยุดเงยหน้า พรานยกมือ"
+  },
+  {
+   "id": "s07b",
+   "file": "ep01_s07b.png",
+   "dur": 5,
+   "motion": "still",
+   "note": "ท้องฟ้าว่างเปล่าผ่านช่องใบไม้"
+  }
+ ],
+ "cues": [
+  {
+   "type": "engine",
+   "start": 0.3,
+   "end": 5,
+   "note": "เครื่องบินเปิดเรื่อง"
+  },
+  {
+   "type": "pad",
+   "start": 5,
+   "end": 44
+  },
+  {
+   "type": "rustle",
+   "start": 6.5,
+   "end": 9
+  },
+  {
+   "type": "low",
+   "start": 20,
+   "end": 45
+  },
+  {
+   "type": "rustle",
+   "start": 34,
+   "end": 36
+  },
+  {
+   "type": "engine",
+   "start": 45,
+   "end": 51,
+   "note": "เสียงเครื่องบินที่ไม่มีอยู่"
+  }
+ ]
+}
